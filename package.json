@@ -1,0 +1,19 @@
+{
+  "name": "discord.js-v13-handler",
+  "version": "1.0.5",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.2.0",
+    "visa2discord": "^1.0.8"
+  },
+  "devDependencies": {
+    "node": "^16.10.0"
+  },
+  "description": "A handler which supports discord.js v13 and above which slash commands, context menus and normal commands"
+}
