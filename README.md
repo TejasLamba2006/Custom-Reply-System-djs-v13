@@ -3,7 +3,7 @@ This is a discord bot written in discord.js v13 that focusses on custom reply / 
 
 # How to start it?
 
-- Rename `example-config.js` to `comfig.js
+- Rename `example-config.js` to `config.js`
 - Fill all staff, Keep in mind if `global` is set to `true` slash commands will be loaded for all guilds and if its false and `test` is `true` commands will be only loaded for test guild whoose ID is in `GUILD_ID`
 - Run `npm i`
 - Run `node index.js`
