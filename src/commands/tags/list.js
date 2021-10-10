@@ -11,7 +11,7 @@ module.exports = class ListCommand extends Command {
       command: {
         enabled: true, //booleen
         usage: "",
-        category: "",
+        category: "tags",
         botPermissions: ["SEND_MESSAGES", "EMBED_LINKS", "READ_MESSAGE_HISTORY", "USE_EXTERNAL_EMOJIS"],
       },
       slashCommand: {

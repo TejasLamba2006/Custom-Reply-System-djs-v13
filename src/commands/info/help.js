@@ -9,7 +9,7 @@ module.exports = class HelpCommand extends Command {
       cooldown: 5,
       command: {
         enabled: true, //booleen
-        usage: "",
+        usage: "<category / command>",
         category: "info",
         botPermissions: [],
       },
