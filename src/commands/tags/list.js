@@ -31,9 +31,9 @@ db.all().filter(tejas => tejas.ID.startsWith(`reply_${message.guild.id}`)).forEa
             let a = m.ID.split("_")
             reply.push(`\`${a[2]}\``)
         })
-    return sendEmbed(message, (reply.length > 0) ? reply.join(', ') : "No Custom Reply / Tag Found", (reply.length > 0) ? "GREEN" : "RED")
+    sendEmbed(message, (reply.length > 0) ? reply.join(', ') : "No Custom Reply / Tag Found", (reply.length > 0) ? "GREEN" : "RED")
 
-    
+    reply = []
   }
 
   async interactionRun(interaction, options) {
@@ -41,7 +41,9 @@ db.all().filter(tejas => tejas.ID.startsWith(`reply_${interaction.guild.id}`)).f
             let a = m.ID.split("_")
             reply.push(`\`${a[2]}\``)
         })
-    return sendFollowUp(interaction, (reply.length > 0) ? reply.join(', ') : "No Custom Reply / Tag Found", (reply.length > 0) ? "GREEN" : "RED")
+     sendFollowUp(interaction, (reply.length > 0) ? reply.join(', ') : "No Custom Reply / Tag Found", (reply.length > 0) ? "GREEN" : "RED")
+
+    reply = []
   }
 };
 
