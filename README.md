@@ -14,3 +14,15 @@ This is a discord bot written in discord.js v13 that focusses on custom reply / 
 - Nodejs 16.6+
 - Rest Packages
 - visa2discord v1.0.8
+
+# Self Hosting Agreement
+
+You have to mention me anywhere while using the code
+
+# YouTube Video Making Agreement
+
+There should be a line in your video description
+```
+Credits to visa2code - https://youtube.com/visa2code
+```
+Any video not following this will be taken down!
