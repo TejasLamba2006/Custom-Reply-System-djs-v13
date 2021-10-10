@@ -6,7 +6,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tejas Lamba#1924",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
@@ -17,5 +17,5 @@
   "devDependencies": {
     "node": "^16.10.0"
   },
-  "description": "A handler which supports discord.js v13 and above which slash commands, context menus and normal commands"
+  "description": "This is a discord bot written in discord.js v13 that focusses on custom reply / tag system"
 }
