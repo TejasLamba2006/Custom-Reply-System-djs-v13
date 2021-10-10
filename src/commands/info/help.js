@@ -93,7 +93,7 @@ async function sendEmbed(msg, desc, color) {
   const embed = new MessageEmbed()
   .setDescription(desc)
   .setColor(color)
-  .setFooter(`${message.client.config.prefix}help <category> for more info`)
+  .setFooter(`${msg.client.config.prefix}help <category> for more info`)
 
 msg.reply({ embeds: [embed] })
 

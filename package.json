@@ -17,5 +17,13 @@
   "devDependencies": {
     "node": "^16.10.0"
   },
-  "description": "This is a discord bot written in discord.js v13 that focusses on custom reply / tag system"
+  "description": "This is a discord bot written in discord.js v13 that focusses on custom reply / tag system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TajuModding/Custom-Reply-System-djs-v13.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TajuModding/Custom-Reply-System-djs-v13/issues"
+  },
+  "homepage": "https://github.com/TajuModding/Custom-Reply-System-djs-v13#readme"
 }
