@@ -1,0 +1,12 @@
+{
+  "files": {
+    "src/commands/info/ping.js": [
+      {
+        "id": "e71a3f8d-dd03-4c03-8150-28d85d993576",
+        "line": 29,
+        "version": 96,
+        "index": 624
+      }
+    ]
+  }
+}

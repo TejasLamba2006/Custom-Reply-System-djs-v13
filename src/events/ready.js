@@ -8,7 +8,7 @@ module.exports = async (client) => {
  await client.registerInteractions();
   } else if (client.config.Slash.test)
 await client.registerInteractions(client.config.Slash.GUILD_ID);
- }
+ 
   
 };
 

@@ -1,3 +1,4 @@
+const db = require('quick.db')
 module.exports = async (client, message) => {
   if (!message.guild || message.author.bot) return;
 const prefix = client.config.prefix
@@ -6,7 +7,7 @@ const prefix = client.config.prefix
 
   let isCommand = false;
   if (message.content.startsWith(prefix)) {
-    const args = message.content.replace(`${prefix}`, "").split(/\s+/);
+    let args = message.content.slice(prefix.length).trim().split(/ +/g)
     const invoke = args.shift().toLowerCase();
     const cmd = client.getCommand(invoke);
 
@@ -18,6 +19,21 @@ const prefix = client.config.prefix
         message.reply("Oops! An error occurred while running the command");
        console.log(ex);
       }
-    }
+    } 
+   
+
+    
+  } else {
+    // Custom reply / Tag system
+    let args = message.content.trim().split(/ +/g)
+    const invoke = args.shift().toLowerCase();
+
+          
+      let found = db.get(`reply_${message.guild.id}_${invoke}`)
+       if (found !== null) {
+    
+         let reply = db.get(`reply_${message.guild.id}_${invoke}`)
+         message.channel.send({ content: reply })
+         }
   }
 };

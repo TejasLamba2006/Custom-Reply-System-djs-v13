@@ -1,10 +1,9 @@
 module.exports = {
   prefix: "!", //prefix
   Slash: {
-        global: true, //booleen | has to be true or false
-        test: false, //booleen has to be true or false
-        GUILD_ID: "" //string has to be number
+        global: false, //boolean | has to be true or false
+        test: true, //boolean has to be true or false
+        GUILD_ID: "860874073835569154" //string has to be number
   },
-  token: "", // bot token
-  mongo: "" //mongo url if you want to connect to mongo, if not leave empty
+  token: "ODU5NzI0MDQ2MDA1OTYwNzA1.YNw2aQ.HtvE6QW9ugROMtgucZweLLRNpWk", // bot token
 };
